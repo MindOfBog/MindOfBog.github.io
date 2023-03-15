@@ -156,7 +156,7 @@
 	function loadTableLBP()
 	{
 		clearInterval(intervalLBP);
-		$.get( "https://thick-bog.net/lbp_related_downloads.list", function( data ) {
+		$.get( "/lbp_related_downloads.list", function( data ) {
 			$( ".result" ).html( data );
     
 			const lines = data.split(";");
@@ -232,7 +232,7 @@
 	function loadTableMC()
 	{
 		clearInterval(intervalMC);
-		$.get( "https://thick-bog.net/mc_related.list", function( data ) {
+		$.get( "/mc_related.list", function( data ) {
 			$( ".result" ).html( data );
     
 			const lines = data.split(";");
@@ -312,7 +312,7 @@
 		headerTTB.className = "body-item mbr-fonts-style display-7";
 		headerTTB.nextElementSibling.remove();
 		
-		$.get( "https://thick-bog.net/mc_thickbogbeta.list", function( data ) {
+		$.get( "/mc_thickbogbeta.list", function( data ) {
 			$( ".result" ).html( data );
     
 			const lines = data.split(";");
@@ -440,7 +440,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	function loadTableOther()
 	{
 		clearInterval(intervalOther);
-		$.get( "https://thick-bog.net/other_downloads.list", function( data ) {
+		$.get( "/other_downloads.list", function( data ) {
 			$( ".result" ).html( data );
     
 			const lines = data.split(";");
